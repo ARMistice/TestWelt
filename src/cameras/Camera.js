@@ -161,7 +161,7 @@ THREE.Camera.prototype.update = function ( parentMatrixWorld, forceUpdate, camer
 
 			this.matrixWorldNeedsUpdate = false;
 			forceUpdate = true;
-
+			// The Base change
 			THREE.Matrix4.makeInvert( this.matrixWorld, this.matrixWorldInverse );
 
 		}
